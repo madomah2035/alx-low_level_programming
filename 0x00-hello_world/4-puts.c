@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
- * main - entry point
- * Retun: Always 0 (success)
+ * main - Entry point
+ * Retun: Always 0 (Success)
  */
-int main(void) 
+int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
        	return (0);
