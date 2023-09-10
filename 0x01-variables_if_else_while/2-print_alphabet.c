@@ -7,17 +7,17 @@
  */
 int main(void)
 {
-    char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
-    int i = 0;
+	char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
+	int i = 0;
 
-    do
-    {
-        putchar(alphabet[i]);
-        i++;
-    } while (alphabet[i] != '\0');
+	do
+	{
+		putchar(alphabet[i]);
+		i++;
+	} while (alphabet[i] != '\0');
 
-    putchar('\n');
+	putchar('\n');
 
-    return (0);
+	return (0);
 }
 
