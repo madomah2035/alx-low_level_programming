@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-    char alphabet[] = "abcdefghijklmnopqrstuvwxyz"; // Use an array to store the alphabet
+    char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
     int i = 0;
 
     do
@@ -16,7 +16,7 @@ int main(void)
         i++;
     } while (alphabet[i] != '\0');
 
-    putchar('\n'); // New line character after the loop
+    putchar('\n');
 
     return (0);
 }
