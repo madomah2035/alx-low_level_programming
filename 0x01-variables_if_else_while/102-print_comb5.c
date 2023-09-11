@@ -27,6 +27,7 @@ int main(void)
 			for (tens2 = tens1; tens2 <= 9; tens2++)
 			{
 				int start = (tens1 == tens2) ? ones1 + 1 : 0;
+
 				for (ones2 = start; ones2 <= 9; ones2++)
 				{
 					putchar(tens1 + '0');
