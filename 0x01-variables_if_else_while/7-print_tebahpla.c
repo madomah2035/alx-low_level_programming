@@ -8,6 +8,7 @@ int main(void)
 {
 	char alpha[] = "zyxwvutsrqponmlkjihgfedcba";
 	int i = 0;
+
 	do {
 		putchar(alpha[i]);
 		i++;
