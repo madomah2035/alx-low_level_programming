@@ -7,25 +7,24 @@
  */
 int main(void)
 {
-    int digit1, digit2;
+	int digit1, digit2;
 
-    for (digit1 = 0; digit1 <= 8; digit1++)
-    {
-        for (digit2 = digit1 + 1; digit2 <= 9; digit2++)
-        {
-            putchar(digit1 + '0'); /* Print the first digit */
-            putchar(digit2 + '0'); /* Print the second digit */
+	for (digit1 = 0; digit1 <= 8; digit1++)
+	{
+		for (digit2 = digit1 + 1; digit2 <= 9; digit2++)
+		{
+			putchar(digit1 + '0'); /* Print the first digit */
+			putchar(digit2 + '0'); /* Print the second digit */
 
-            if (digit1 != 8 || digit2 != 9)
-            {
-                putchar(','); /* Print a comma */
-                putchar(' '); /* Print a space */
-            }
-        }
-    }
+			if (!(digit1 == 8 && digit2 == 9))
+			{
+				putchar(','); /* Print a comma */
+				putchar(' '); /* Print a space */
+			}
+		}
+	}
 
-    putchar('\n'); /* Print a newline */
+	putchar('\n'); /* Print a newline */
 
-    return (0);
+	return (0);
 }
-
