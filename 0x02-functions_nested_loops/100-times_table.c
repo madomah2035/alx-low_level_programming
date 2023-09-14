@@ -1,8 +1,8 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * print_times_table - Print the n times table starting with 0.
- * @n: The value specifying the size of the times table.
+ * @n: The value specifying the size of the times table (up to 15).
  */
 void print_times_table(int n)
 {
@@ -18,14 +18,34 @@ void print_times_table(int n)
 
                 if (j == 0)
                 {
-                    printf("%d", result);
+                    _putchar('0' + result);
                 }
                 else
                 {
-                    printf(",%3d", result);
+                    _putchar(',');
+                    _putchar(' ');
+                    if (result < 10)
+                    {
+                        _putchar(' ');
+                        _putchar(' ');
+                        _putchar('0' + result);
+                    }
+                    else if (result >= 10 && result < 100)
+                    {
+                        _putchar(' ');
+                        _putchar('0' + (result / 10));
+                        _putchar('0' + (result % 10));
+                    }
+                    else
+                    {
+                        _putchar('0' + (result / 100));
+                        _putchar('0' + ((result / 10) % 10));
+                        _putchar('0' + (result % 10));
+                    }
                 }
             }
-            printf("\n");
+            _putchar('\n');
         }
     }
 }
+
